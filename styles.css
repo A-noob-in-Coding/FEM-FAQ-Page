@@ -27,6 +27,12 @@ body{
     background-color: var(--Light_pink);
 }
 
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 main{
     background-color: var(--White);
     padding: 2rem;
