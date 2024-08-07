@@ -25,6 +25,7 @@ body{
     background-image: url("/assets/images/background-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-color: var(--Light_pink);
+    background-size: 100% auto;
 }
 
 img{
