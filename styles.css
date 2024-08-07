@@ -1,0 +1,98 @@
+:root{    
+--White: hsl(0, 0%, 100%);
+--Light_pink: hsl(275, 100%, 97%);
+--Grayish_purple: hsl(292, 16%, 49%);
+--Dark_purple: hsl(292, 42%, 14%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url("/assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+body{
+    font-family: "Work Sans";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--Light_pink);
+}
+
+main{
+    background-color: var(--White);
+    padding: 2rem;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+section{
+    padding: 1rem 0rem 1rem 0rem;
+    border-bottom: 3px solid var(--Light_pink);
+}
+
+.forth{
+    border-bottom: none;
+}
+
+.heading{
+    display: flex;
+    gap: 1rem;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    p:hover{
+        color: #AD28EB;
+    }    
+}
+
+.description{
+    font-weight: bold;
+}
+
+.minus{
+    display: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.des{
+    padding-top: 1rem;
+    display: none;
+}
+
+@media screen and (max-width:48em) {
+    main{
+        width: 90%;
+    }
+    body{
+        line-height: 1.2rem;
+    }
+}
+
+@media screen and (min-width:48.1em) {
+    body{
+        font-size: 1.2rem;
+    }
+    main{
+        width: 70%;
+    }
+}
