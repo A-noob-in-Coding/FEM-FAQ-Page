@@ -38,12 +38,10 @@ main{
 }
 
 section{
+
     padding: 1rem 0rem 1rem 0rem;
     border-bottom: 3px solid var(--Light_pink);
-}
-
-.forth{
-    border-bottom: none;
+    
 }
 
 .heading{
@@ -56,12 +54,16 @@ section{
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    p{
+        padding-bottom: 0.5rem;
+    }
     p:hover{
         color: #AD28EB;
     }    
 }
 
 .description{
+    cursor: pointer;
     font-weight: bold;
 }
 
@@ -75,8 +77,15 @@ button{
 }
 
 .des{
-    padding-top: 1rem;
-    display: none;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-in ;
+}
+
+.des.visible{
+    opacity: 1;
+    height: auto;
 }
 
 @media screen and (max-width:48em) {
